@@ -4,10 +4,10 @@ import pandas as pd
 
 # Load model and vectorizer
 try:
-    with open("model/model.pkl", "rb") as model_file:
+    with open("model.pkl", "rb") as model_file:
         model = pickle.load(model_file)
 
-    with open("model/vectorizer.pkl", "rb") as vec_file:
+    with open("vectorizer.pkl", "rb") as vec_file:
         vectorizer = pickle.load(vec_file)
 
 except FileNotFoundError:
